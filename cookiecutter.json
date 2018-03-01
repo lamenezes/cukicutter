@@ -7,7 +7,9 @@
   "author_email": "eita.geovana@forninho.com",
   "url": "https://github.com/lamenezes/{{ cookiecutter.repo_name }}",
   "version": "0.1.0",
+  "release_date": "{% now 'utc', '%Y-%m-%d' %}",
   "_copy_without_render": [
     "*.pyc"
-  ]
+  ],
+  "_extensions": ["jinja2_time.TimeExtension"]
 }
