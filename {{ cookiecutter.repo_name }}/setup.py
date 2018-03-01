@@ -55,7 +55,7 @@ class UploadCommand(Command):
 
 setup(
     name='{{ cookiecutter.project_name }}',
-    version='0.1.0',
+    version=version,
     description='{{ cookiecutter.project_short_description }}',
     url='{{ cookiecutter.url }}',
     author='{{ cookiecutter.author }}',
