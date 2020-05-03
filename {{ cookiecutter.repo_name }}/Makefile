@@ -15,5 +15,11 @@ clean-build:
 	@rm -fr dist/
 	@rm -fr *.egg-info
 
+lint:
+	pre-commit run -a
+
+pyformat:
+	black .
+
 test:
-	pipenv run py.test --cov={{ cookiecutter.project_name }} --cov-report=term-missing
+	py.test
